@@ -14,4 +14,5 @@ class transcript:
         """
       
         for line in fileinput.input(self.filename, inplace=1):
-            print(f'{prefix}{line.rstrip("\n"}{suffix}')
+            line = line.rstrip('\n')
+            print(f'{prefix}{line}{suffix}')
