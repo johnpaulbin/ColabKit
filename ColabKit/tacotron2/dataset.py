@@ -11,13 +11,13 @@ class dataset:
 
     def pickle(self, 
                file_name = "picklized_dataset.pkl",
-               batch_size: int, 
+               batch_size: int = 14, 
                compute_gst = None, 
-               symbol_set: str, 
-               text_cleaners: list,
-               sampling_rate: int,
-               arpabet: float,
-               shuffle=True):
+               symbol_set: str = "nvidia_taco2", 
+               text_cleaners: list = ["english_cleaners"],
+               sampling_rate: int = 22050,
+               arpabet: float = 1.0,
+               shuffle = True):
         """
         pickle will serialize a dataset
         """
