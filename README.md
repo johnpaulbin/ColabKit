@@ -23,3 +23,14 @@ textfile = transcript("transcript.txt")
 - Arpabet converter
 
 `textfile.arpa()`
+
+### Tacotron2
+
+```py
+from ColabKit.tacotron2.dataset import dataset
+tacoset = dataset("transcript.txt")
+```
+
+- Pickle a dataset
+
+`tacoset.pickle(. . .)` (View dataset.py for required parameters)
