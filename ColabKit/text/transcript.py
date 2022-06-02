@@ -33,7 +33,7 @@ class transcript:
             text = " ".join(
                 [
                     f"{{{s.strip()}}}" if not any(s.strip() == i for i in list(",.!?@#$%^&*()")) else s.strip()
-                    for s in " ".join(g2p(text)).split("  ")
+                    for s in " ".join(self.g2p(text)).split("  ")
                 ]
             )
             print(f"{line[0]}|{text}{'|' + line[2] if len(line) == 3 else ''}")
