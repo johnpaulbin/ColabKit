@@ -26,7 +26,6 @@ class transcript:
         arpa will replace the text column of a LJSpeech-style transcript with its arpabet equivalent.
         """
 
-      
         for idx, line in enumerate(tqdm(fileinput.input(self.filename, inplace=1))):
             line = line.rstrip().split("|")
             text = line[1]
