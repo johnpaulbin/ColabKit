@@ -11,6 +11,8 @@ setup(
     packages=find_packages(where=".", exclude=["tests"]),
     install_requires=[
         "setuptools>=45.0",
+        "g2p_en",
+        "tqdm"
     ],
     classifiers=[
         "Programming Language :: Python :: 3.0",
