@@ -25,7 +25,8 @@ class dataset:
         try:
             from uberduck_ml_dev.data_loader import TextMelDataset, TextMelCollate
         except ImportError:
-            print("Unable to run function, as uberduck_ml_dev is not installed in your system. You can do so via: pip install git+https://github.com/uberduck-ai/uberduck-ml-dev.git")
+            print("Unable to run pickle function, as uberduck_ml_dev is not installed in your system. You can do so via: pip install git+https://github.com/uberduck-ai/uberduck-ml-dev.git")
+            return
 
         print(f"""
             Beginning pickle with configuration:
