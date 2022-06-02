@@ -22,7 +22,7 @@ textfile = transcript("transcript.txt")
   
 - Arpabet converter
 
-`textfile.arpa()`
+`textfile.arpa(ljspeech = True)` (Change ljspeech to False to convert the whole line.)
 
 ### Tacotron2
 
