@@ -9,10 +9,9 @@ class transcript:
 
 
     def psfix(self, prefix="", suffix=""):
-
         """
         psfix (Prefix / Suffix) will add the specified prefix / suffix per line of the transcript.
         """
       
         for line in fileinput.input(self.filename, inplace=1):
-            print(f'{prefix}{line.rstrip('\n')}{suffix}')
+            print(f'{prefix}{line.rstrip("\n"}{suffix}')
